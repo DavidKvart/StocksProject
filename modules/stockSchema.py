@@ -10,12 +10,12 @@ stock_schema={
         "lastPrice" : {"type" : "number"},
         "precentNetChange" : {"type" : "number"},
     },
-     "required": ["netChange", "volume",  "ticker","name","lastPrice","precentNetChange"],
+     "required": ["volume",  "ticker","name","lastPrice"],
 }
 day_schema={
     "type" : "object",
     "properties" : {
-        "datetime" : {"type" : "number"},
+        "datetime" : {"type" : "string"},
         "gainers" : {"type": "array", "items": {"type": "string"}},
         "loosers" : {"type": "array", "items": {"type": "string"}},
         "actives" : {"type": "array", "items": {"type": "string"}},
