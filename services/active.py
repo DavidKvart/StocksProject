@@ -17,51 +17,11 @@ class ActiveStocks:
             for stock in stocks:
                 ValidateData.validateStock(stock)
             result = active_stock.insert_many(stocks)
+
             return result.inserted_ids
 
         except Exception as e:
             return e
 
-    def get_stock_by_id():
-        try:
-            print('got order by id')
-            return ''
-        except Exception as e:
-            return e
 
 
-# test= [
-#     {
-#         "netChange" : 12,
-#         "volume" : 12,
-#         "ticker" :"dasd",
-#         "name" : "das",
-#         "lastPrice" : 12,
-#         "precentNetChange" : 54,
-#     },
-#     {
-#         "netChange" : 12,
-#         "volume" : 12,
-#         "ticker" :"dasd",
-#         "name" : "das",
-#         "lastPrice" : 12,
-#         "precentNetChange" : 54,
-#     },
-#     {
-#         "netChange" : 12,
-#         "volume" : 12,
-#         "ticker" :"dasd",
-#         "name" : "das",
-#         "lastPrice" : 12,
-#         "precentNetChange" : 54,
-#     },
-#     {
-#         "netChange" : 12,
-#         "volume" : 12,
-#         "ticker" :"dasd",
-#         "name" : "das",
-#         "lastPrice" : 12,
-#         "precentNetChange" : 54,
-#     }
-
-#     ]

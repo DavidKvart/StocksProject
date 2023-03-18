@@ -22,13 +22,4 @@ class LosersStocks:
         except Exception as e:
             return e
         
-    def get_stock_by_id():
-        try:
-            print('got order by id')
-            return ''
-        except Exception as e:
-            return e
-        
-        
-        
 
